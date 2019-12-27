@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru"
+<head>
+	<meta charset="UTF-8">
+	<title>Список задач</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="construct">
+			<div class="first-row">
+				<span class="header-title">Список задач</span>
+				<div class="central">
+					<input class="button-plus" onclick="Edit(-1)" type="button" name="add" value="+">
+					<label class="button-plus--label" for="add"> Добавить</label>
+				</div>
+			</div>
+
+			<div class="kus">
+				
+			</div>
+		</div>
+
+
+		
+		<div class="card">
+			<form class="card-wrap">
+				<span class="card-title"> Карточка задания  </span> 
+				<label class="label" for="inp">Задача</label>
+				<input type="text" name="inp" placeholder="">
+				<div class="checkbox card-checkbox central">
+					<input id="check7" type="checkbox" name="check" value="check1">
+					<label for="check7" class="checkbox-label button-plus--label"> Высокий приоритет </label> <img src="images/hiprio.svg" class="card-flash">
+				</div>
+				<input type="button" onclick="Submit()" class="save" value="Сохранить">
+				<input type="button" onclick="Cancel()" class="cancel" value="Отменить">
+			</form>	
+		</div>	
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

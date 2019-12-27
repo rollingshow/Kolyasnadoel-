@@ -1,0 +1,329 @@
+body {
+	margin: 0;
+	background-image: url(images/bg.png);
+	font-family: Roboto, sans-serif;
+}
+.wrapper {
+	height: 100%;
+	width: 1152px;
+	position: relative;
+	display: block;
+	margin:0 auto;
+	
+}
+.construct {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	height: 1080px;
+	float:left;
+	width: 570px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 6px #00000029;
+	display: block;
+	position: relative;
+	z-index: 1
+	}
+.card {
+	top: 71px;
+	height: 235px;
+	width: 555px;
+	background-color: #ffffff;
+	box-shadow: 0px 6px 6px #00000029;
+	border-radius: 6px;
+	position: fixed;
+	margin-left: 570px;
+	z-index: 2
+}
+.card-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+.first-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 15px;
+}
+
+.header-title {
+	color: #707070;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.central {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.button-plus {
+	margin-top: 3px;
+	padding: 2px;
+	width: 17px;
+	height: 17px;
+	background-color: #707070;
+	color: white;
+	border: 0px;
+	outline: 0;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 0.5;
+	cursor: pointer;
+	transition: .2s all ease-in-out;
+	border-radius: 2px;
+}
+	.button-plus:hover {
+		background-color: #4e4e4e;
+	}
+
+.button-plus--label {
+	margin-top: 2px;
+	font-size: 14px;
+	color: #707070;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	padding-right: 15px;
+}
+.checkbox {
+	margin-right: 8px;
+}
+
+.grey-bg {
+	background-color: #0606060A;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "‎✓";
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+input[type=checkbox]:checked + span {
+ color: white;
+}
+
+.checkbox-label:before {
+    content: "‎✓";
+    color: #707070;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    background-color: #707070;
+    border-radius: 2px;
+}
+
+.active {
+	flex-grow: 1;
+}
+
+.deactive {
+	flex-grow: 1;
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+.title {
+	width: 350px;
+	text-align: left;
+	font-size: 14px;
+	flex-grow: 1;
+	color: #707070;
+	margin-top: 2px;
+}
+
+.flash {
+	background-image: url(images/hiprio.svg);
+	width: 17px;
+    height: 17px;
+    margin-right: 15px;
+    flex-grow: 0;
+    display:none;
+}
+
+.flash.high {
+	display: inline-block;
+
+}
+.edit {
+	background-image: url(images/pencil.svg);
+	background-color: transparent;
+	margin-top: 3px;
+	padding: 2px;
+	width: 20px;
+	height: 20px;
+	border: 0px;
+	outline: 0;
+	cursor: pointer;
+}
+
+.delete {
+	background-image: url(images/trashbin.svg);
+	background-color: transparent;
+	margin-top: 3px;
+	margin-left: 15px;
+	padding: 2px;
+	width: 20px;
+	height: 20px;
+	border: 0px;
+	outline: 0;
+	cursor: pointer;
+}
+
+.card-title {
+	font-size: 18px;
+	flex-basis: 500px;
+}
+
+input[type=text] {
+	flex-basis: 500px;
+	flex-grow: 1;
+	border-radius: 2px;
+	border: #AAAAAABF solid 1px;
+	padding: 7px 10px;
+	width: 255px;
+	margin: 10px 0px 10px 0px;
+}
+
+.save {
+	margin-top: 18px;
+	display: block;
+	padding: 7px 25px 8px;
+	color: #fff;
+	font-family: roboto;
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
+	background-color: #3F88E8;
+	border-radius: 25px;
+	border: 2px solid #3F88E8;
+	cursor: pointer;
+	transition: .2s all ease-in-out;
+}
+	.save:hover {
+	background-color: transparent;
+	color: #3F88E8;
+	border-color: #3F88E8;
+	outline: none;
+}
+
+	.save:focus {
+		outline: none;
+	}
+
+	.save:active {
+		background-color: #3F88E8;
+		color: white;
+		border-color: #3F88E8;
+		outline: none;
+	}
+
+.cancel {
+	margin-top: 18px;
+	margin-left: 15px;
+	display: block;
+	padding: 7px 25px 8px;
+	color: #707070;
+	font-family: roboto;
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 25px;
+	border: 2px solid #707070;
+	cursor: pointer;
+	transition: .2s all ease-in-out;
+}
+	.cancel:hover {
+	background-color: transparent;
+	color: #fff;
+	border-color: #707070;
+	background-color: #707070;
+	outline: none;
+}
+
+	.cancel:focus {
+		outline: none;
+	}
+
+	.cancel:active {
+		background-color: #3F88E8;
+		color: white;
+		border-color: #3F88E8;
+		outline: none;
+	}
+
+.label {
+	margin-top: 7px;
+	font-size: 14px;
+	color: #707070;
+	font-size: 14px;
+}
+
+.card-checkbox {
+	flex-basis: 500px;
+}
+
+.card-flash {
+ margin-left: 13px;
+ margin-top: 3px;
+}
+
+input[type=checkbox]+.check_ico img {
+	filter: invert(100%);
+	opacity: 0;
+	padding: 3px;
+	transition: all .3s ease;
+	width: 11px
+}
+
+input[type=checkbox]:checked+.check_ico img, label:active {
+opacity: 1
+}
+
+.row .check_ico {
+	background: #707070;
+	border: 0 solid transparent;
+	border-radius: 4px;
+	display: inline-block;
+	height: 17px;
+	margin-left: 15px;
+	margin-top: 8px;
+	transform: translateY(0px);
+	width: 17px
+}
+
+.row:nth-child(even) {
+	background: #FFFFFF0A
+}
+
+.row:nth-child(odd) {
+	background: #0606060A
+}
